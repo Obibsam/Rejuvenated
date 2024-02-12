@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.genDiv {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  padding: 50px 5%;
+}
+.genDiv div {
+  margin-bottom: 20px;
+  background-color: brown;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  padding-top: 80px;
+  color: antiquewhite;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  .genDiv {
+    display: block;
+    background: fuchsia;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 769px) {
+  .genDiv {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    background: cyan;
+  }
+}
+@media only screen and (min-width: 770px) and (max-width: 1025px) {
+  .genDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: burlywood;
+  }
+}
